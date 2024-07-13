@@ -10,34 +10,32 @@ import "../Styles/landing.css";
 const LandingPage = () => {
   return (
     <>
-    <div className='landiv'>
-      <img  src={Horse}  />
-    </div>
-    <div className="landing-page">
-      <h1>Welcome to Horse Ride Booking</h1>
-      <div className="horse-list">
-        <div className="horse-card">
-          <img src={Horse1} alt=" Silver Blaze Horse" />
-          <p className='horsename'>Silver Blaze </p>
-        </div>
-        <div className="horse-card">
-          <img src={Horse2} alt="White Blaze Horse" />
-          <p className='horsename'>White Blaze</p>
-        </div>
-        <div className="horse-card">
-          <img src={Horse3} alt="Red Rum Horse" />
-          <p className='horsename'>Red Rum</p>
-        </div>
-        <div className="horse-card">
-          <img src={Horse4} alt="Seabiscuit Horse" />
-          <p className='horsename'>Seabiscuit</p>
-        </div>
+      <div className='landiv'>
+        <img  src={Horse}  alt='Horse'/>
       </div>
-      <Link to="/booking" className="book-now-btn">Book Now</Link>
-    </div>
-    
+      <div className="landing-page">
+        <h1>Welcome to Horse Ride Booking</h1>
+        <div className="horse-list">
+          <div className="horse-card">
+            <img src={Horse1} alt="Silver Blaze Horse" />
+            <p className='horsename'>Silver Blaze </p>
+          </div>
+          <div className="horse-card">
+            <img src={Horse2} alt="White Blaze Horse" />
+            <p className='horsename'>White Blaze</p>
+          </div>
+          <div className="horse-card">
+            <img src={Horse3} alt="Red Rum Horse" />
+            <p className='horsename'>Red Rum</p>
+          </div>
+          <div className="horse-card">
+            <img src={Horse4} alt="Seabiscuit Horse" />
+            <p className='horsename'>Seabiscuit</p>
+          </div>
+        </div>
+        <Link to="/booking" className="book-now-btn">Book Now</Link>
+      </div>
     </>
-    
   );
 };
 

@@ -43,7 +43,6 @@ const Confirmation = () => {
       >
         <h2>Booking Confirmed!</h2>
         <p>Thank you for booking your horse</p>
-        <p>Details:</p>
         <p>
           <strong>Horse:</strong> {latestBooking.horse.name}
         </p>

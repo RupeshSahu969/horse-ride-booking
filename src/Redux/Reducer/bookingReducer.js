@@ -1,4 +1,4 @@
-import { ADD_BOOKING, REMOVE_BOOKING } from '../Action/actionBooking';
+import { ADD_BOOKING} from '../Action/actionBooking';
 import Horse1 from "../../assets/david-dibert-Huza8QOO3tc-unsplash.jpg";
 import Horse2 from "../../assets/guillermo-mota-ax2WNRH_bec-unsplash1.jpg";
 import Horse3 from "../../assets/helena-lopes-lIeqGEdvex0-unsplash.jpg";
@@ -20,11 +20,6 @@ const bookingReducer = (state = initialState, action) => {
             return {
                 ...state,
                 bookings: [...state.bookings, action.payload],
-            };
-        case REMOVE_BOOKING:
-            return {
-                ...state,
-                bookings: state.bookings.filter(booking => booking.id !== action.payload.id),
             };
         default:
             return state;
