@@ -6,7 +6,4 @@ export const addBooking = (booking) => ({
     payload: booking,
 });
 
-export const removeBooking = (id) => ({
-    type: REMOVE_BOOKING,
-    payload: { id },
-});
+

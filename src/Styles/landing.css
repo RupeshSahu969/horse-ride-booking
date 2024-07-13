@@ -1,23 +1,18 @@
-/* body{
-  background-image: url("../assets/horse-6351668_1280.jpg");
-} */
- .landiv{
-  width: 80%;
-  height: 500px;
-  margin: auto;
- }
- .landiv img{
-  margin-top: 3px;
-  width: 100%;
-  height: 700px;
- }
+.landiv {
+  text-align: center;
+}
+
+.landiv img {
+  max-width: 80%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .landing-page {
   text-align: center;
-  padding: 20px;
-  margin-top: 200px;
-}
-p{
-  color: black;
+  margin-top: 20px;
 }
 
 .horse-list {
@@ -25,46 +20,45 @@ p{
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
 }
 
 .horse-card {
-  width: 270px;
-  text-align: center;
-  background-color: #f9f9f9;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(10, 7, 7, 0.1);
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   transition: transform 0.3s ease;
-}
-
-.horse-card:hover {
-  transform: translateY(-5px);
 }
 
 .horse-card img {
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: auto;
 }
 
-.horse-card p {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #1c1717;
+.horse-card:hover {
+  transform: scale(1.05);
 }
 
 .book-now-btn {
   display: inline-block;
-  padding: 10px 20px;
   margin-top: 20px;
+  padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
+  border: none;
+  border-radius: 5px;
   text-decoration: none;
-  border-radius: 4px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .book-now-btn:hover {
   background-color: #0056b3;
 }
 
+.horsename {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+}

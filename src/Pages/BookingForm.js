@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addBooking } from "../Redux/Action/actionBooking";
-import Modal from "react-modal";
 import "../Styles/form.css";
 import { useNavigate } from "react-router-dom";
 
-Modal.setAppElement("#root");
-
 const BookingForm = () => {
+  
   const dispatch = useDispatch();
   const horses = useSelector((state) => state.booking.horses);
 
