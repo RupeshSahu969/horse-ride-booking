@@ -1,9 +1,9 @@
 import React from 'react';
 import Horse1 from "../assets/david-dibert-Huza8QOO3tc-unsplash.jpg";
 import Horse2 from "../assets/helena-lopes-lIeqGEdvex0-unsplash.jpg";
-import Horse3 from  "../assets/guillermo-mota-ax2WNRH_bec-unsplash1.jpg";
+import Horse3 from "../assets/guillermo-mota-ax2WNRH_bec-unsplash1.jpg";
 import Horse4 from "../assets/selcuk-ulutas-CbnogotK6P8-unsplash.jpg";
-import Horse from "../assets/horse-6351668_1280.jpg"
+import Horse from "../assets/horsebooking.jpg";
 import { Link } from 'react-router-dom';
 import "../Styles/landing.css";
 
@@ -11,8 +11,11 @@ const LandingPage = () => {
   return (
     <>
       <div className='landiv'>
-        <img  src={Horse}  alt='Horse'/>
+
       </div>
+      <div>
+      <p className='horsetext'>Horse Riding in India</p>
+        </div>
       <div className="landing-page">
         <h1>Welcome to Horse Ride Booking</h1>
         <div className="horse-list">
@@ -35,6 +38,15 @@ const LandingPage = () => {
         </div>
         <Link to="/booking" className="book-now-btn">Book Now</Link>
       </div>
+      <footer className="footer">
+        <p>&copy; 2024 Horse Ride Booking. All rights reserved.</p>
+        <div className="footer-links">
+          <Link to="/">About</Link>
+          <Link to="/">Contact</Link>
+          <Link to="/">Terms of Service</Link>
+          <Link to="/">Privacy Policy</Link>
+        </div>
+      </footer>
     </>
   );
 };
