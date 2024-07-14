@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import Modal from "react-modal";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import "../Styles/form.css";
+import "../Styles/booking.css";
 import { useNavigate } from "react-router-dom";
 
 const Confirmation = () => {

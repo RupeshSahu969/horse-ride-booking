@@ -1,17 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addBooking } from "../Redux/Action/actionBooking";
 import "../Styles/form.css";
 import { useNavigate } from "react-router-dom";
 
 const BookingForm = () => {
-  
   const dispatch = useDispatch();
   const horses = useSelector((state) => state.booking.horses);
-
   const navigate = useNavigate();
   const [selectedHorse, setSelectedHorse] = useState("");
-  const [selectedDate, setSelectedDate] = useState(new Date());
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [name, setName] = useState("");
@@ -40,11 +37,6 @@ const BookingForm = () => {
       slots.push(`${i < 10 ? "0" : ""}${i}:00`);
     }
     return slots;
-  };
-
-  const isWeekdayOrSaturday = (date) => {
-    const day = date.getDay();
-    return day >= 1 && day <= 6;
   };
 
   const handlePhoneChange = (e) => {
@@ -90,12 +82,11 @@ const BookingForm = () => {
             required
           >
             <option value="">Select a time slot</option>
-            {isWeekdayOrSaturday(selectedDate) &&
-              generateTimeSlots().map((slot, index) => (
-                <option key={index} value={slot}>
-                  {slot}
-                </option>
-              ))}
+            {generateTimeSlots().map((slot, index) => (
+              <option key={index} value={slot}>
+                {slot}
+              </option>
+            ))}
           </select>
         </div>
         <div>
@@ -122,13 +113,13 @@ const BookingForm = () => {
           <label>Phone</label>
           <input
             type="tel"
-            placeholder="Enter Number"
+            placeholder="Enter Phone Number"
             value={phone}
             onChange={handlePhoneChange}
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Confirm Booking</button>
       </form>
     </div>
   );

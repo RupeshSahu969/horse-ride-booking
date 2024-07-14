@@ -1,64 +1,91 @@
 .landiv {
-  text-align: center;
-}
-
-.landiv img {
-  max-width: 80%;
-  height: auto;
-  margin-top: 10px;
-  border-radius: 15px;
+  width: 100%;
+  height: 100vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url("../assets/horsebooking.jpg");
+  background-size: cover; /* Ensure the image covers the entire div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+.horsetext{
+  color: #e9ecef;
+  margin-top: -200px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 150px;
 }
 
 .landing-page {
   text-align: center;
-  margin-top: 20px;
+  padding: 20px;
 }
 
 .horse-list {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  margin-top: 20px;
 }
 
 .horse-card {
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .horse-card img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
-.horse-card:hover {
-  transform: scale(1.05);
+.horsename {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .book-now-btn {
   display: inline-block;
+  width: 200px;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #28a745;
   color: #fff;
-  border: none;
-  border-radius: 5px;
   text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 .book-now-btn:hover {
-  background-color: #0056b3;
+  background-color: #218838;
 }
 
-.horsename {
+.footer {
   text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  margin-top: 30px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-links {
   margin-top: 10px;
-  font-size: 1.2em;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
