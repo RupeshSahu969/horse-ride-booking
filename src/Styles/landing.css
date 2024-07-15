@@ -3,9 +3,9 @@
   height: 100vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-image: url("../assets/horsebooking.jpg");
-  background-size: cover; /* Ensure the image covers the entire div */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .horsetext{
   color: #e9ecef;

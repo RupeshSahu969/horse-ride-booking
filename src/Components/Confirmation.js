@@ -31,7 +31,6 @@ const Confirmation = () => {
     closeModal();
     navigate("/");
   };
-
   return (
     <div className="confirmation-page">
       <Modal

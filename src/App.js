@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import BookingForm from "./Pages/BookingForm";
-import Confirmation from "./Pages/Confirmation";
-import LandingPage from "./Pages/LandingPage";
+import BookingForm from "./Components/BookingForm";
+import Confirmation from "./Components/Confirmation";
+import LandingPage from "./Components/LandingPage";
 
 function App() {
   return (
