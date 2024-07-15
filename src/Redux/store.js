@@ -1,5 +1,5 @@
-import { createStore, combineReducers } from 'redux';
-import bookingReducer from './Reducer/bookingReducer';
+import { createStore, combineReducers } from "redux";
+import bookingReducer from "./Reducer/bookingReducer";
 
 const rootReducer = combineReducers({
   booking: bookingReducer,
